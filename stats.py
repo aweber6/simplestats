@@ -14,6 +14,7 @@ def mode(vals):
     pass
 
 def median(vals):
+    """this is the description of the function"""
     vals.sort()
     length = len(vals)
     index = length / 2
