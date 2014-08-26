@@ -13,6 +13,16 @@ def mode(vals):
     """Computes the mode from a list of values."""
     pass
 
+def median(vals):
+    vals.sort()
+    length = len(vals)
+    index = length / 2
+    if length % 2 == 0:
+       return mean([vals[index], vals[index - 1]])
+    else:
+       return vals[index]
+
+
 def std(vals):
     """Computes the standard deviation from a list of values."""
     n = len(vals)
