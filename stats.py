@@ -18,10 +18,12 @@ def median(vals):
     vals.sort()
     length = len(vals)
     index = length / 2
-    if length % 2 == 0:
+    if length % 2 == 0:# length is even
        return mean([vals[index], vals[index - 1]])
-    else:
+    else: #length is odd
        return vals[index]
+
+
 
 
 def std(vals):
